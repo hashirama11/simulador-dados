@@ -5,6 +5,16 @@ import time
 
 # 1. Configuración de la página
 st.set_page_config(page_title="Simulador Estadístico", layout="centered")
+# --- OCULTAR MARCA DE AGUA Y MENÚ ---
+ocultar_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+    """
+st.markdown(ocultar_menu_style, unsafe_allow_html=True)
+# ------------------------------------
 st.title("La Ley de los Grandes Números 🎲")
 st.markdown("Observa cómo la suma de dos dados converge hacia una distribución normal (Campana de Gauss). El 7 es matemáticamente el resultado más probable.")
 
