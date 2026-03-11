@@ -3,6 +3,7 @@ import pandas as pd
 import random
 import time
 
+# Proyecto 2026
 # 1. Configuración de la página
 st.set_page_config(page_title="Simulador de Dados", layout="centered")
 st.title("Distribución Estadística: Lanzamiento de Dados 🎲")
